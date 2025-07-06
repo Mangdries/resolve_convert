@@ -91,6 +91,7 @@ fn render_button(d: &mut RaylibDrawHandle, button: &mut Button) {
                         return;
                     }
 
+                    //LLM generated code
                     let file_path = button.file.as_ref().unwrap();
 
                     let script_path = std::env::var("CARGO_MANIFEST_DIR").unwrap().to_string()
@@ -99,6 +100,7 @@ fn render_button(d: &mut RaylibDrawHandle, button: &mut Button) {
                     println!("--------------");
                     println!("{}", file_path);
 
+                    //Partially LLM generated code
                     println!(
                         "{:#?}",
                         Command::new("sh")
@@ -109,6 +111,8 @@ fn render_button(d: &mut RaylibDrawHandle, button: &mut Button) {
                     );
 
                     env::set_current_dir("../").unwrap();
+
+                    //End of LLM generated code
                 }
             }
         }
