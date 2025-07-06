@@ -4,6 +4,6 @@
 You probably shouldn't. There's most likely some project out there that does a similar purpose way better.
 
 **Disclaimer**
-SOME LLM code was used in the making of this project, however most of the code in hand written has been human reviewed to ensure it's accurate.
+SOME LLM code was used in the making of this project, however most of the code was hand written. The LLM code has been human reviewed to ensure it's accurate.
 
 Enjoy :D
