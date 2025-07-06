@@ -93,9 +93,8 @@ fn render_button(d: &mut RaylibDrawHandle, button: &mut Button) {
 
                     let file_path = button.file.as_ref().unwrap();
 
-                    let script_path = std::env::var("CARGO_MANIFEST_DIR")
-                    .unwrap()
-                    .to_string() + "/src/convert.sh";
+                    let script_path = std::env::var("CARGO_MANIFEST_DIR").unwrap().to_string()
+                        + "/src/convert.sh";
 
                     println!("--------------");
                     println!("{}", file_path);
